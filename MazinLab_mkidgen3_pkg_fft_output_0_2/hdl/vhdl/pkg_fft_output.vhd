@@ -50,7 +50,7 @@ port (
     output_r_TDATA : OUT STD_LOGIC_VECTOR (511 downto 0);
     output_r_TVALID : OUT STD_LOGIC;
     output_r_TREADY : IN STD_LOGIC;
-    output_r_TUSER : OUT STD_LOGIC_VECTOR (31 downto 0);
+    output_r_TUSER : OUT STD_LOGIC_VECTOR (15 downto 0);
     output_r_TLAST : OUT STD_LOGIC );
 end;
 
@@ -180,7 +180,7 @@ architecture behav of pkg_fft_output is
     signal output_r_TREADY_int : STD_LOGIC;
     signal regslice_forward_output_data_U_vld_out : STD_LOGIC;
     signal regslice_forward_output_user_U_apdone_blk : STD_LOGIC;
-    signal output_r_TUSER_int : STD_LOGIC_VECTOR (31 downto 0);
+    signal output_r_TUSER_int : STD_LOGIC_VECTOR (15 downto 0);
     signal regslice_forward_output_user_U_ack_in_dummy : STD_LOGIC;
     signal regslice_forward_output_user_U_vld_out : STD_LOGIC;
     signal regslice_forward_w1_output_last_U_apdone_blk : STD_LOGIC;
@@ -238,7 +238,7 @@ begin
 
     regslice_forward_output_user_U : component regslice_forward
     generic map (
-        DataWidth => 32)
+        DataWidth => 16)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
@@ -1364,7 +1364,7 @@ begin
 
     output_r_TDATA_int <= (((((((((((((((iq_15_in_sig & iq_14_in_sig) & iq_13_in_sig) & iq_12_in_sig) & iq_11_in_sig) & iq_10_in_sig) & iq_9_in_sig) & iq_8_in_sig) & iq_7_in_sig) & iq_6_in_sig) & iq_5_in_sig) & iq_4_in_sig) & iq_3_in_sig) & iq_2_in_sig) & iq_1_in_sig) & iq_0_in_sig);
     output_r_TLAST_int <= '1' when (group_r = ap_const_lv8_FF) else '0';
-    output_r_TUSER_int <= std_logic_vector(IEEE.numeric_std.resize(unsigned(scale_V_in_sig),32));
+    output_r_TUSER_int <= std_logic_vector(IEEE.numeric_std.resize(unsigned(scale_V_in_sig),16));
     output_r_TVALID <= regslice_forward_output_data_U_vld_out;
 
     output_r_TVALID_int_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001)

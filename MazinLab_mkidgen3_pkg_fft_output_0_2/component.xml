@@ -3,7 +3,7 @@
   <spirit:vendor>MazinLab</spirit:vendor>
   <spirit:library>mkidgen3</spirit:library>
   <spirit:name>pkg_fft_output</spirit:name>
-  <spirit:version>0.1</spirit:version>
+  <spirit:version>0.2</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>ap_clk</spirit:name>
@@ -379,7 +379,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUTPUT_R.TUSER_WIDTH">32</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUTPUT_R.TUSER_WIDTH">16</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
@@ -402,7 +402,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9cca4cf7</spirit:value>
+            <spirit:value>a79449cb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -418,7 +418,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>af76b4aa</spirit:value>
+            <spirit:value>9428b196</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -434,7 +434,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0411939f</spirit:value>
+            <spirit:value>ac451cdc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -450,7 +450,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dc7fccd9</spirit:value>
+            <spirit:value>742b439a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -486,7 +486,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eec2267a</spirit:value>
+            <spirit:value>6fe8bc75</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1121,7 +1121,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1179,7 +1179,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/pkg_fft_output.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_1d7756ec</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b523d9af</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1219,7 +1219,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/pkg_fft_output_v0_1.tcl</spirit:name>
+        <spirit:name>xgui/pkg_fft_output_v0_2.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_1b589c1a</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -1238,7 +1238,7 @@
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">pkg_fft_output_v0_1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">pkg_fft_output_v0_2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
@@ -1271,15 +1271,15 @@
       </xilinx:taxonomies>
       <xilinx:displayName>SSRFFT to AXIS</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2002281136</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-02-28T19:36:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2002281347</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-02-28T21:47:41Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="b24ce037"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f3f3ece2"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a0f5ac34"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0547fcb9"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="24937b0b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6f4253f0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="4f09cccb"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ac9d7396"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

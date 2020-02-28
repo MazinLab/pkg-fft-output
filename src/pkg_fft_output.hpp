@@ -6,7 +6,7 @@ typedef unsigned short sample_t;
 typedef ap_uint<12> scale_t;
 typedef struct {
 	iq_t data[N_LANES];
-	unsigned int user;
+	unsigned short user;
 	bool last;
 } axisout_t;
 

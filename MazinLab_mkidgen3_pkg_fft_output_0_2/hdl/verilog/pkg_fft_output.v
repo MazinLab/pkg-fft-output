@@ -94,7 +94,7 @@ input   scale_V_ap_vld;
 output  [511:0] output_r_TDATA;
 output   output_r_TVALID;
 input   output_r_TREADY;
-output  [31:0] output_r_TUSER;
+output  [15:0] output_r_TUSER;
 output   output_r_TLAST;
 
  reg    ap_rst_n_inv;
@@ -205,7 +205,7 @@ reg    output_r_TVALID_int;
 wire    output_r_TREADY_int;
 wire    regslice_forward_output_data_U_vld_out;
 wire    regslice_forward_output_user_U_apdone_blk;
-wire   [31:0] output_r_TUSER_int;
+wire   [15:0] output_r_TUSER_int;
 wire    regslice_forward_output_user_U_ack_in_dummy;
 wire    regslice_forward_output_user_U_vld_out;
 wire    regslice_forward_w1_output_last_U_apdone_blk;
@@ -269,7 +269,7 @@ regslice_forward_output_data_U(
 );
 
 regslice_forward #(
-    .DataWidth( 32 ))
+    .DataWidth( 16 ))
 regslice_forward_output_user_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
