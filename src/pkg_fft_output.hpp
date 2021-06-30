@@ -1,4 +1,5 @@
 #include "ap_int.h"
+#include "ap_axi_sdata.h"
 #define N_LANES 16
 typedef unsigned int iq_t;
 typedef unsigned short sample_t;
